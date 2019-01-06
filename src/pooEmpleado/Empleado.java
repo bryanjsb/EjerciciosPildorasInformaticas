@@ -26,22 +26,11 @@ public class Empleado extends Persona implements Comparable, Trabajadores {
 		id=idSiguiente++;
 	}
 	
-	/*public Empleado(String n) {
-		nombre=n; 
-		sueldo = 0.0;
-		GregorianCalendar calendario= new GregorianCalendar(2000,0,1);
-		altaContrato= calendario.getTime();
-		id=idSiguiente++;
-	}
-	*/
-	
 	public Empleado(String n) {
 	this(n,30000,2000,01,01);// el this llama al constructor que tenga los argumentos necesarios
 	}
 
 	public double getSueldo() {return sueldo;}
-	
-	//public final double getSueldo() {return sueldo;}
 	
 	public Date getAltaContracto() {return altaContrato;}
 	
@@ -54,6 +43,7 @@ public class Empleado extends Persona implements Comparable, Trabajadores {
 		sueldo+=aumento;
 	}
 		
+        @Override
 	public String mostrarDatos() {
 		return "Nombre: "+this.getNombre()+" ID: "+ id+" Alta contrato: "+altaContrato+" Sueldo: "+getSueldo();
 	}
@@ -78,7 +68,7 @@ public class Empleado extends Persona implements Comparable, Trabajadores {
 
 	@Override
 	public double estableceBonus(double gratificacion) {
-		return (Trabajadores.bonusBase+gratificacion);
+		return (Trabajadores.BONUSBASE+gratificacion);
 	}
 	
 }// fin de la clase
