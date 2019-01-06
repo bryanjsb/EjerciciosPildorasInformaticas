@@ -1,7 +1,7 @@
 package pooEmpleado;
 // clase abstracta
 
-public abstract  class Persona {
+public abstract class Persona {
 private final String nombre;
 
 	public Persona(String n) {

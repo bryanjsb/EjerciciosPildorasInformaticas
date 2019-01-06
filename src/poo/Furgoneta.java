@@ -8,12 +8,13 @@ public class Furgoneta extends Coche {
 		super();// lo uso para llamar el consttructor de la clase padre.
 		capacidadCarga= capacidadC;
 		plazasExtra= plazasE;
-		this.setTipo("Furgoneta");
+		super.setTipo("Furgoneta");
 		
 	}
 	
-	public String dimeDatosFurgoneta() {
-		return this.dimeDatosCoche()+"\nla capacidad de carga es:"+ capacidadCarga+
+        @Override
+	public String dimeDatos() {
+		return super.dimeDatos()+"\nla capacidad de carga es:"+ capacidadCarga+
 				"kgs \ny las plazas son: "+plazasExtra;
 	}
 	

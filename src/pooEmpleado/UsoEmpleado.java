@@ -20,7 +20,6 @@ public class UsoEmpleado {
 		Jefatura jefe1= new Jefatura("Sara",1500000,2017,12,01);
 		arregloEmpleado[4]=jefe1;
 		jefe1.estableceIncentivo(3000);
-		
 		arregloEmpleado[5]= new Jefatura("Andrea",200000,2150,06,06);
 		Jefatura jefe2=(Jefatura)arregloEmpleado[5];
 		jefe2.estableceIncentivo(4000);	
@@ -37,7 +36,7 @@ public class UsoEmpleado {
 		//usando instanceof para saber el tipo de dato
 		Empleado directorComercial= new Jefatura("Sandra",8500,2012,05,05);
 		Comparable ejemplo= new Empleado("Elisabeth",95000,2011,06,07);
-	
+
 		if(directorComercial instanceof Empleado) {
 			System.out.println(directorComercial.getNombre()+" Es de tipo jefatura");
 		}
@@ -62,11 +61,10 @@ public class UsoEmpleado {
 		Arrays.sort(arregloEmpleado);// ordena los objetos pero para esto debo de agregar la interface Comparable 
 		//e inmplementar el metodo CompareTo(objet arg) para que el el metodo sort pueda ordenar
 		//
-				
-		  for(int i=0; i<arregloEmpleado.length;i++) {
-			 // System.out.println("//////////"+(i+1)+"////////////");
-				System.out.println(arregloEmpleado[i].mostrarDatos());	
-		  }
+            for (Empleado arregloEmpleado1 : arregloEmpleado) {
+                // System.out.println("//////////"+(i+1)+"////////////");
+                System.out.println(arregloEmpleado1.mostrarDatos());
+            }
 		  
 	    System.out.println("___________________________________________________________________\n");
 		Persona lasPersonas[]= new Persona[2];

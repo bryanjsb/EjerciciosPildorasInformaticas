@@ -32,7 +32,7 @@ public final class Jefatura extends Empleado implements Jefes {
 	@Override
 	public double estableceBonus(double gratificacion) {
 		double prima=2000;
-		return (Trabajadores.bonusBase+gratificacion+prima);
+		return (Trabajadores.BONUSBASE+gratificacion+prima);
 	}
 	
 	

@@ -18,6 +18,7 @@ public class Alumno extends Persona {
 		return carrera;
 	}
 	
+        @Override
 	public String mostrarDatos() {
 		return "Nombre: "+getNombre()+" Carrera: "+carrera;
 	}

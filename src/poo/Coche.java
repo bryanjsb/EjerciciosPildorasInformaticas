@@ -123,7 +123,7 @@ public class Coche {
         return "El peso de carro es: " + pesoFinal;
     }
 
-    public String dimeDatosCoche() {
+    public String dimeDatos() {
         return "Tipo de coche: " + tipo + "\n" + "el coche es de color: " + color + "\ntiene  " + ruedas + " ruedas \n"
                 + "Largo: " + largo + "cm\nAncho: " + ancho + "cm\n" + this.mostrarAsientos() + "\n" + this.mostrarClimatizador()
                 + "\n" + this.pesoTotal() + "\n" + this.precioTotal();
